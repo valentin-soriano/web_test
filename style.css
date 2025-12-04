@@ -149,6 +149,7 @@ th, td {
 .header-img {
   flex: 1;
   min-width: 300px;
+  width: 100%;
 }
 
 .btn-1, .btn-2 {
@@ -171,7 +172,7 @@ th, td {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin: 60px auto;
+  margin: auto;
 }
 
 .ofert-1 {
@@ -182,6 +183,7 @@ th, td {
   text-align: center;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  margin: auto;
 }
 
 .ofert-1:hover {
@@ -194,6 +196,7 @@ th, td {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   margin-top: 40px;
+  margin: auto;
 }
 
 .products {
@@ -298,4 +301,121 @@ th, td {
 
 .footer a:hover {
   color: white;
+}
+
+.imag-venta {
+  margin-left: 200px;
+}
+
+/* ------------------- RESPONSIVE DESIGN ------------------- */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+  .menu {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-txt h1 {
+    font-size: 32px;
+  }
+
+  .products-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imag-venta {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+  /* Menú compacto */
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Header */
+  .header {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-img {
+    order: -1; /* imagen arriba del texto */
+  }
+
+  .header-txt h1 {
+    font-size: 26px;
+  }
+
+  .header-txt p {
+    font-size: 16px;
+  }
+
+  /* Ofertas en una sola columna */
+  .ofert {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Productos: 1 por fila */
+  .products-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Íconos y blog */
+  .icon-1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon-img img {
+    margin: 0 auto;
+  }
+
+  .blog {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .imag-venta {
+    margin-left: 0;
+    text-align: center;
+  }
 }
