@@ -21,6 +21,7 @@ img {
   display: block;
 }
 
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -39,7 +40,6 @@ img {
 }
 
 .menu {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
