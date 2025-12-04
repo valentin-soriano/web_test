@@ -353,18 +353,22 @@ th, td {
     flex-direction: column;
     gap: 10px;
     padding: 10px 20px;
+    position: relative; /* 👈 evita que tape el contenido */
+  }
+
+  body {
+    padding-top: 0; /* elimina espacio extra */
+  }
+
+  .header {
+    padding-top: 20px; /* ajusta el espacio superior */
+    text-align: center;
   }
 
   .navbar ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
-
-  /* Header */
-  .header {
-    padding-top: 100px;
-    text-align: center;
   }
 
   .header-content {
